@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Job Slink
 > Job allocation system that sends time sensitive job details to sub-contractors via SMS.
 
@@ -49,3 +50,6 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 [travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
 [travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
 [wiki]: https://github.com/yourname/yourproject/wiki
+=======
+# job-slink
+>>>>>>> aca2982204a05afec882e46744b9021140d66c41
