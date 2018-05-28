@@ -7,9 +7,14 @@ When a contractor is sent a job, they can be sent all the job details like time,
 
 This project will allow me to use and experiment with brand new technology all the while using TDD and SOLID development principles
 
-## Tech Used
+## User Stories
+
+## Models
+
+## Technology Used
 - Javascript
 - Node.JS
+- Prism
 - GraphQL
 - React
 
