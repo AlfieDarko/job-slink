@@ -28,6 +28,10 @@ This project will allow me to use and experiment with brand new technology all t
 > So I can chck if there are any outstanding jobs,<br>
 > I want to able to check complete and incomplete jobs.
 
+> As a User,<br>
+> So I can assign a job to the closest contractor,<br>
+> I want to be able to view contractors by area.
+
 > As a Contractor,<br>
 > So I can let the employer know I have finished their job,<br>
 > I can reply 'done' to a job text to mark it as complete.
@@ -38,14 +42,7 @@ This project will allow me to use and experiment with brand new technology all t
 
 
 ## Models
- - DB
- Contact <br>
- -> Name<br>
- -> Phone Number<br>
- -> Area<br>
- -> Current Job<br>
- -> Past Jobs<br>
-    
+    (https://github.com/AlfieDarko/job-slink/blob/master/Diagrams/modeldiagram.jpg)
 
 ## Technology Used
 - Javascript
