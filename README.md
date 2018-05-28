@@ -42,7 +42,7 @@ This project will allow me to use and experiment with brand new technology all t
 
 
 ## Models
-[(https://github.com/AlfieDarko/job-slink/blob/master/Diagrams/modeldiagram.jpg "Diagram 1")]
+<img src="https://raw.githubusercontent.com/AlfieDarko/job-slink/master/Diagrams/modeldiagram.jpg">
 
 ## Technology Used
 - Javascript
