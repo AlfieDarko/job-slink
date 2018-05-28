@@ -39,7 +39,9 @@ This project will allow me to use and experiment with brand new technology all t
 - Prism
 - GraphQL
 - React
+- ESLint (Linting)
 - Jest (Testing)
+- TravisCI (Testing)
 
 ## Installation
 
