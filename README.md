@@ -5,10 +5,32 @@ This idea had come out of our company losing clients due to miscommunication bet
 
 When a contractor is sent a job, they can be sent all the job details like time, address etc. via SMS or Email. We previously used to communicate this info over the phone but sometimes things can get misinterpreted and long term this leads to lower client satisfaction.<br><Br>
 
-This project will allow me to use and experiment with brand new technology all the while using TDD and SOLID development principles
+This project will allow me to use and experiment with brand new technology all the while using TDD and SOLID development principles.
 
 ## User Stories
+> As a user, 
+> So that I can have contractors details on standby,
+> I want to be able to save their details to a contact list.
 
+> As a User,
+> So that my contractors can get job details,
+> I want to be able to assign jobs to workers on the contact list.
+
+> As a User
+> So that I can manage my contact book
+> I want to be able to add, remove and edit contacts at will.
+
+> As a User,
+> So that I can know which contractor done a certain job last week,
+> I want to be able to view a contractors jobs history.
+
+> As a Contractor,
+> So I can let the employer know I have finished their job,
+> I can reply 'done' to a job text to mark it as complete
+
+> As a Contractor,
+> So I can know where to go to complete a job,
+> I want to recieve a text with the time and location details of a job.
 ## Models
 
 ## Technology Used
@@ -17,6 +39,7 @@ This project will allow me to use and experiment with brand new technology all t
 - Prism
 - GraphQL
 - React
+- Jest (Testing)
 
 ## Installation
 
