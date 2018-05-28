@@ -8,8 +8,10 @@ When a contractor is sent a job, they can be sent all the job details like time,
 This project will allow me to use and experiment with brand new technology all the while using TDD and SOLID development principles.
 
 ## User Stories
-> As a user, 
+> As a user,
+
 > So that I can have contractors details on standby,
+
 > I want to be able to save their details to a contact list.
 
 > As a User,
