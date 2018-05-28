@@ -38,6 +38,14 @@ This project will allow me to use and experiment with brand new technology all t
 
 
 ## Models
+ - DB
+ Contact <br>
+ -> Name<br>
+ -> Phone Number<br>
+ -> Area<br>
+ -> Current Job<br>
+ -> Past Jobs<br>
+    
 
 ## Technology Used
 - Javascript
