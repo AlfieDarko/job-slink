@@ -3,28 +3,31 @@
 > Job allocation system that sends time sensitive job details to sub-contractors via SMS.
 
 <div align="center">
+<br><b>
+Contents:</b>
+<br>
 <b>
-<br>Contents:<br>
 [Spec ](#spec) |
 [User Stories ](#user-stories) |
 [Feature List ](#feature-list) |
 [Models ](#models) |
+</b>
 <div align="center">
-
+<b>
 [Technologies ](#technologies) |
 [Why These ](#why-these) |
 [Installation ](#installation) |
 [Usage Examples ](#usage) |
-
+</b>
 </div>
 <div align="center">
-
+<b>
 [Development Setup ](#development-setup) |
 [Release History ](#release-history) |
 [TODO ](#todo) |
 [Meta ](#meta) |
 [Contributing ](#contributing) |
-
+</b>
 
 </div>
 
