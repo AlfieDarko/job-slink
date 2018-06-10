@@ -9,7 +9,6 @@
 
 
 <div align="center">
-<hr>
 <b>
 <br>Contents:<br>
 [Spec ](#spec) |
@@ -31,8 +30,9 @@
 [Meta ](#meta) |
 [Contributing ](#contributing) |
 </div>
-</div>
 </b>
+
+</div>
 
 
 <hr>
