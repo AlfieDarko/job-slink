@@ -6,18 +6,10 @@
  A web based job allocation system that allows businesses to manage sub-contractor tasks via SMS.
 
 </h6>
-
-<div align="center">
-
-<b>
-<br>Contents:
 <br>
-<br>
-</b>
-</div>
 
-<div align="center">
- [Spec ](#spec) <br>
+ - <b>Contents:</b> 
+- [Spec ](#spec) <br>
 - [User Stories ](#user-stories)
 - [Feature List ](#feature-list)
 - [Models ](#models)
@@ -30,7 +22,6 @@
 - [TODO ](#todo)
 - [Meta ](#meta)
 - [Contributing ](#contributing)
-</div>
 
 <hr>
 
