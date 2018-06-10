@@ -10,37 +10,32 @@
 
 <div align="center">
 <hr>
-
 <b>
 <br>Contents:<br>
 [Spec ](#spec) |
 [User Stories ](#user-stories) |
 [Feature List ](#feature-list) |
 [Models ](#models) |
-<div align="center">
 
+<div align="center">
 [Technologies ](#technologies) |
 [Why These ](#why-these) |
 [Installation ](#installation) |
 [Usage Examples ](#usage) |
-
 </div>
-<div align="center">
 
+<div align="center">
 [Development Setup ](#development-setup) |
 [Release History ](#release-history) |
 [TODO ](#todo) |
 [Meta ](#meta) |
 [Contributing ](#contributing) |
-
-
 </div>
-
-<hr>
-
 </div>
 </b>
 
+
+<hr>
 <div align="center">
 
 <b>Follow the JobSlink development as it happens!</b><br>
