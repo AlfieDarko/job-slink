@@ -11,6 +11,7 @@
 <div align="center">
 <b>
 <br>Contents:<br>
+</b>
 [Spec ](#spec) |
 [User Stories ](#user-stories) |
 [Feature List ](#feature-list) |
