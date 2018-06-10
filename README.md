@@ -40,6 +40,12 @@
 </b>
 
 <br>
+<div align="center">
+
+<b>Follow the JobSlink developers publication!</b>
+
+<a href="https://www.medium.com/JobSlink"><img src="https://cdn.mos.cms.futurecdn.net/xJGh6cXvC69an86AdrLD98-320-80.jpg"></a>
+</div>
 ## Intro
 
 This idea had come out of our company ClickCleanit losing a valuable client due to miscommunication between our company and sub-contractors regarding job details. I felt we needed more of our communications recorded and sent digitally.<br>
