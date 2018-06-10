@@ -160,6 +160,10 @@ After researching testing technologies for React, I decided to go with Jest & En
 
 Using TravisCI and AWS will allow me to develop my devops skills. Being able to deploy features as part of a dev team means this is an important part I need to master.
 
+I also get to use a new style of [git workflow](https://sdlambert.github.io/2015/04/09/git-workflow-for-solo-development/) which is more developer/contributor friendly than I previously have done on solo projects.
+
+All in all this is a good project to test my technical ability and so I can assess my internal thought processes when it comes to software development.
+
 ## Installation
 
 
