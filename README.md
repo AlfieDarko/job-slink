@@ -6,24 +6,24 @@
 
 <br><b>Contents:<br>
 [Spec ](#spec) |
-[User Stories ](#recent-experience) |
-[Feature List ](#skills) |
-[Models ](#current-interests) |
+[User Stories ](#user-stories) |
+[Feature List ](#feature-list) |
+[Models ](#models) |
 <div align="center">
 
-[Technologies ](#projects) |
-[Why These ](#recent-experience) |
-[Installation ](#skills) |
-[Useage Examples ](#current-interests) |
+[Technologies ](#technologies) |
+[Why These ](#why-these) |
+[Installation ](#installation) |
+[Usage Examples ](#usage) |
 
 </div>
 <div align="center">
 
-[Development Setup ](#projects) |
-[Release History ](#recent-experience) |
-[TODO ](#skills) |
-[Meta ](#current-interests) |
-[Contributing ](#current-interests) |
+[Development Setup ](#development-setup) |
+[Release History ](#release-history) |
+[TODO ](#todo) |
+[Meta ](#meta) |
+[Contributing ](#contributing) |
 
 
 </div>
