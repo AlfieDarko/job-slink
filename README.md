@@ -10,26 +10,26 @@
 
 <div align="center">
 <b>
-<br>Contents:<br>
-[Spec ](#spec) |
-[User Stories ](#user-stories) |
-[Feature List ](#feature-list) |
-[Models ](#models) |
+  <br>Contents:<br>
+  [Spec ](#spec) |
+  [User Stories ](#user-stories) |
+  [Feature List ](#feature-list) |
+  [Models ](#models) |
 
-<div align="center">
+<!-- <div align="center"> -->
 [Technologies ](#technologies) |
 [Why These ](#why-these) |
 [Installation ](#installation) |
 [Usage Examples ](#usage) |
-</div>
+<!-- </div> -->
 
-<div align="center">
+<!-- <div align="center"> -->
 [Development Setup ](#development-setup) |
 [Release History ](#release-history) |
 [TODO ](#todo) |
 [Meta ](#meta) |
 [Contributing ](#contributing) |
-</div>
+<!-- </div> -->
 </b>
 
 </div>
