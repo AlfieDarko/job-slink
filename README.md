@@ -3,8 +3,8 @@
 > Job allocation system that sends time sensitive job details to sub-contractors via SMS.
 
 <div align="center">
-
-<br><b>Contents:<br>
+<b>
+<br>Contents:<br>
 [Spec ](#spec) |
 [User Stories ](#user-stories) |
 [Feature List ](#feature-list) |
@@ -30,7 +30,7 @@
 
 
 </div>
-
+</b>
 
 <br>
 ## Intro
