@@ -9,8 +9,9 @@
 
 
 <div align="center">
-<b>
+<hr>
 
+<b>
 <br>Contents:<br>
 [Spec ](#spec) |
 [User Stories ](#user-stories) |
@@ -35,17 +36,22 @@
 
 </div>
 
+<hr>
 
 </div>
 </b>
 
-<br>
 <div align="center">
 
-<b>Follow the JobSlink developers publication!</b>
+<b>Follow the JobSlink development as it happens!</b><br>
 
 <a href="https://www.medium.com/JobSlink"><img src="https://cdn.mos.cms.futurecdn.net/xJGh6cXvC69an86AdrLD98-320-80.jpg"></a>
+<br>
+
+<a href="https://www.trello.com/jobslink-dev-board"><img src="https://static.crozdesk.com/web_app_library/providers/logos/000/002/374/original/atlassian-trello-1502570118-logo.png?1502570118"></a>
+
 </div>
+<hr>
 ## Intro
 
 This idea had come out of our company ClickCleanit losing a valuable client due to miscommunication between our company and sub-contractors regarding job details. I felt we needed more of our communications recorded and sent digitally.<br>
