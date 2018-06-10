@@ -10,11 +10,11 @@
 
 <div align="center">
 <b>
-  <br>Contents:<br>
-  [Spec ](#spec) |
-  [User Stories ](#user-stories) |
-  [Feature List ](#feature-list) |
-  [Models ](#models) |
+<br>Contents:<br>
+[Spec ](#spec) |
+[User Stories ](#user-stories) |
+[Feature List ](#feature-list) |
+[Models ](#models) |
 
 <!-- <div align="center"> -->
 [Technologies ](#technologies) |
