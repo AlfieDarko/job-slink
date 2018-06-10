@@ -7,37 +7,33 @@
 
 </h6>
 
-
 <div align="center">
+
 <b>
-<br>Contents:<br>
+<br>Contents:
+<br>
+<br>
 </b>
-
-[Spec ](#spec) |
-[User Stories ](#user-stories) |
-[Feature List ](#feature-list) |
-[Models ](#models) |
-
-<!-- <div align="center"> -->
-[Technologies ](#technologies) |
-[Why These ](#why-these) |
-[Installation ](#installation) |
-[Usage Examples ](#usage) |
-<!-- </div> -->
-
-<!-- <div align="center"> -->
-[Development Setup ](#development-setup) |
-[Release History ](#release-history) |
-[TODO ](#todo) |
-[Meta ](#meta) |
-[Contributing ](#contributing) |
-<!-- </div> -->
-</b>
-
 </div>
 
+<div align="center">
+ [Spec ](#spec) <br>
+- [User Stories ](#user-stories)
+- [Feature List ](#feature-list)
+- [Models ](#models)
+- [Technologies ](#technologies)
+- [Why These ](#why-these) <br>
+- [Installation ](#installation)
+- [Usage Examples ](#usage)
+- [Development Setup ](#development-setup)
+- [Release History ](#release-history)
+- [TODO ](#todo)
+- [Meta ](#meta)
+- [Contributing ](#contributing)
+</div>
 
 <hr>
+
 <div align="center">
 
 <b>Follow the JobSlink development as it happens!</b><br>
