@@ -1,11 +1,45 @@
-# Job Slink
+
+<h1 align="center">JobSlink</h1>
 > Job allocation system that sends time sensitive job details to sub-contractors via SMS.
+
+<div align="center">
+
+<br><b>Contents:<br>
+[Spec ](#spec) |
+[User Stories ](#recent-experience) |
+[Feature List ](#skills) |
+[Models ](#current-interests) |
+<div align="center">
+
+[Technologies ](#projects) |
+[Why These ](#recent-experience) |
+[Installation ](#skills) |
+[Useage Examples ](#current-interests) |
+
+</div>
+<div align="center">
+
+[Development Setup ](#projects) |
+[Release History ](#recent-experience) |
+[TODO ](#skills) |
+[Meta ](#current-interests) |
+[Contributing ](#current-interests) |
+
+
+</div>
+
+
+</div>
+
+
+<br>
+## Intro
 
 This idea had come out of our company ClickCleanit losing a valuable client due to miscommunication between our company and sub-contractors regarding job details. I felt we needed more of our communications recorded and sent digitally.<br>
 
 I then realised this is something that is faced by alot of other companies in this industry so I decided to develop a demo product that provides a solution to this problem. <br> I spoke to the other co-founders to find out what their needs was in a system like this and I developed a spec based on this.
 
-# Spec
+## Spec
 
 Our users can buy a monthly account (or use a demo account in this instance) so that they can hold all their contractor details and assign jobs via the JobSlink system.
 
