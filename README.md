@@ -140,7 +140,7 @@ This can potentially save businesses alot of time especially when it comes to ro
 - ESLint (Linting)
 - Jest  (Testing)
 - Enzyme (Testing)
-- Selenium (Integration Testing)
+- Nightmare JS (Integration/ BDD Testing)
 - CodeClimate(Coverage)
 - TravisCI (CI/CD)
 - AWS
@@ -151,7 +151,7 @@ I wanted to develop my Javascript development skills while at the same time usin
 
 I've been reading alot about GraphQL as I really like how easy queries are to write compared to things like SQL. GraphQL makes it super easy to expand and manipulate info from your API. I feel like this would be a great project to test this out and keep things interesting.
 
-After researching testing technologies for React, I decided to go with Jest & Enzyme. I had been recommended these two by various Makers Academy alumni who test and develop React web apps in production.
+After researching testing technologies for React, I decided to go with Jest, Enzyme & NightmareJS. I had been recommended these two by various Makers Academy alumni who test and develop React web apps in production.
 
 Using TravisCI and AWS will allow me to develop my devops skills. Being able to deploy features as part of a dev team means this is an important part I need to master.
 
