@@ -8,7 +8,7 @@
 </h6>
 <br>
 
- - <b>Contents:</b> 
+<b>Contents:</b> 
 - [Spec ](#spec) <br>
 - [User Stories ](#user-stories)
 - [Feature List ](#feature-list)
