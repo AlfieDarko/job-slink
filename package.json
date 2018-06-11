@@ -1,0 +1,19 @@
+{
+  "name": "job-slink",
+  "version": "1.0.0",
+  "description": "A web based job allocation system that allows businesses to manage sub-contractor tasks via SMS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlfieDarko/job-slink.git"
+  },
+  "author": "Alfie Darko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlfieDarko/job-slink/issues"
+  },
+  "homepage": "https://github.com/AlfieDarko/job-slink#readme"
+}

@@ -8,7 +8,7 @@
 </h6>
 <br>
 
-<b>Contents:</b> 
+<b>Contents:</b>
 - [Spec ](#spec) <br>
 - [User Stories ](#user-stories)
 - [Feature List ](#feature-list)
@@ -36,6 +36,7 @@
 
 </div>
 <hr>
+
 ## Intro
 
 This idea had come out of our company ClickCleanit losing a valuable client due to miscommunication between our company and sub-contractors regarding job details. I felt we needed more of our communications recorded and sent digitally.<br>
