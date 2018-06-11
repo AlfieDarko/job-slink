@@ -41,7 +41,7 @@
 
 This idea had come out of our company ClickCleanit losing a valuable client due to miscommunication between our company and sub-contractors regarding job details. I felt we needed more of our communications recorded and sent digitally.<br>
 
-I then realised this is something that is faced by alot of other companies in this industry so I decided to develop a demo product that provides a solution to this problem. <br> I spoke to the other co-founders to find out what their needs was in a system like this and I developed a spec based on this.
+I then realised this is something that is faced by a lot of other companies in this industry so I decided to develop a demo product that provides a solution to this problem. <br> I spoke to the other co-founders to find out what their needs was in a system like this and I developed a spec based on this.
 
 ## Spec
 
@@ -51,7 +51,7 @@ Users can assign them manually or decide that they can let JobSlink assign them 
 
 Job assignments are sent via SMS and all a contractor has to do is reply 'OK' to accept a job. <br> When the job is finished, the contractor replies 'DONE' & the job will be marked as complete on the system.
 
-This can potentially save businesses alot of time especially when it comes to routine tasks that do not need a certain level of Owner-Contractor communication.
+This can potentially save businesses a lot of time especially when it comes to routine tasks that do not need a certain level of Owner-Contractor communication.
 
 
 ## User Stories
@@ -72,7 +72,7 @@ This can potentially save businesses alot of time especially when it comes to ro
 > I want to be able to view a contractors jobs history.
 
 > As a User,<br>
-> So I can chck if there are any outstanding jobs,<br>
+> So I can check if there are any outstanding jobs,<br>
 > I want to able to check complete and incomplete jobs.
 
 > As a User,<br>
@@ -81,7 +81,7 @@ This can potentially save businesses alot of time especially when it comes to ro
 
 > As a Contractor,<br>
 > So I can know where to go to complete a job,<br>
-> I want to recieve a text with the time and location details of a job.
+> I want to receive a text with the time and location details of a job.
 
 > As a Contractor,<br>
 > So I can let the employer know I have accepted the job,<br>
@@ -139,7 +139,7 @@ This can potentially save businesses alot of time especially when it comes to ro
 
 I wanted to develop my Javascript development skills while at the same time using brand new tech that I've not used before so that it provides me with enough technical challenge to make this a great learning experience.
 
-I've been reading alot about GraphQL as I really like how easy queries are to write compared to things like SQL. GraphQL makes it super easy to expand and manipulate info from your API. I feel like this would be a great project to test this out and keep things interesting.
+I've been reading a lot about GraphQL as I really like how easy queries are to write compared to things like SQL. GraphQL makes it super easy to expand and manipulate info from your API. I feel like this would be a great project to test this out and keep things interesting.
 
 After researching testing technologies for React, I decided to go with Jest, Enzyme & NightmareJS. I had been recommended these two by various Makers Academy alumni who test and develop React web apps in production.
 
