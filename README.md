@@ -32,7 +32,7 @@
 <a href="https://www.medium.com/JobSlink"><img src="https://cdn.mos.cms.futurecdn.net/xJGh6cXvC69an86AdrLD98-320-80.jpg"></a>
 <br>
 
-<a href="https://www.trello.com/jobslink-dev-board"><img src="https://static.crozdesk.com/web_app_library/providers/logos/000/002/374/original/atlassian-trello-1502570118-logo.png?1502570118"></a>
+<a href="https://trello.com/b/EwdOmsxM/jobslink-dev-board"><img src="https://static.crozdesk.com/web_app_library/providers/logos/000/002/374/original/atlassian-trello-1502570118-logo.png?1502570118"></a>
 
 </div>
 <hr>
