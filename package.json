@@ -4,6 +4,9 @@
   "description": "A web based job allocation system that allows businesses to manage sub-contractor tasks via SMS.",
   "main": "index.js",
   "scripts": {
+    "client": "cd client && yarn start",
+    "server": "cd server && yarn start",
+    "dev": "concurrently \"yarn server\" \"yarn client\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/AlfieDarko/job-slink/issues"
   },
-  "homepage": "https://github.com/AlfieDarko/job-slink#readme"
+  "homepage": "https://github.com/AlfieDarko/job-slink#readme",
+  "dependencies": {
+    "concurrently": "^3.5.1"
+  }
 }
