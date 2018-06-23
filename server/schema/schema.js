@@ -10,62 +10,7 @@ const {
   GraphQLList,
 } = graphql;
 
-//  dummy data
-var contractors = [
-  {
-    name: 'Vlad Muchkinokfsi',
-    address: '32 Joymore ave',
-    jobTitle: 'Removal',
-    jobsAccepted: 3,
-    jobsDeclined: 7,
-    jobsNoResponse: 2,
-    id: '1',
-  },
 
-  {
-    name: 'Janet Moline',
-    address: '15 Hunch Road',
-    jobTitle: 'Cleaner',
-    jobsAccepted: 6,
-    jobsDeclined: 3,
-    jobsNoResponse: 2,
-    id: '2',
-  },
-
-  {
-    name: 'Jake Robinson',
-    address: '10 Fishbourne Ave',
-    jobTitle: 'Cleaner',
-    jobsAccepted: 8,
-    jobsDeclined: 3,
-    jobsNoResponse: 1,
-    id: '3',
-  },
-];
-
-var jobs = [
-  {
-    jobCategory: 'Cleaning',
-    address: '91 Cannington Ave',
-    pay: '£60',
-    id: '1',
-    contractorId: '3',
-  },
-  {
-    jobCategory: 'Removals',
-    address: '17 Burnett Street',
-    pay: '£80',
-    id: '3',
-    contractorId: '1',
-  },
-  {
-    jobCategory: 'Cleaning',
-    address: '91 Compton Ave',
-    pay: '£75',
-    id: '3',
-    contractorId: '3',
-  },
-];
 
 const JobType = new GraphQLObjectType({
   name: 'Job',
@@ -85,9 +30,9 @@ const JobType = new GraphQLObjectType({
     contractor: {
       type: ContractorType,
       resolve(parent, args) {
-        return _.find(contractors, {
-          id: parent.contractor.id,
-        });
+        // return _.find(contractors, {
+        //   id: parent.contractor.id,
+        // });
       },
     },
   }),
@@ -125,9 +70,9 @@ const ContractorType = new GraphQLObjectType({
     jobs: {
       type: new GraphQLList(JobType),
       resolve(parent, args) {
-        return _.filter(jobs, {
-          contractorId: parent.id,
-        });
+        // return _.filter(jobs, {
+        //   contractorId: parent.id,
+        // });
       },
     },
   }),
@@ -146,9 +91,9 @@ const RootQuery = new GraphQLObjectType({
       resolve(parent, args) {
         // code to get data from db/ other source
         // resolve function to find info
-        return _.find(jobs, {
-          id: args.id,
-        });
+        // return _.find(jobs, {
+        //   id: args.id,
+        // });
       },
     },
     contractor: {
@@ -159,21 +104,21 @@ const RootQuery = new GraphQLObjectType({
         },
       },
       resolve(parent, args) {
-        return _.find(contractors, {
-          id: args.id,
-        });
+        // return _.find(contractors, {
+        //   id: args.id,
+        // });
       },
     },
     jobs: {
       type: new GraphQLList(JobType),
       resolve(parent, args) {
-        return jobs;
+        // return jobs;
       },
     },
     contractors: {
       type: new GraphQLList(ContractorType),
       resolve(parent, args) {
-        return contractors;
+        // return contractors;
       },
     },
   },
