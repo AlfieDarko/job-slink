@@ -1,15 +1,21 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
-const graphqlHTTP = require('express-graphql')
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-const schema = require('./schema/schema')
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const graphqlHTTP = require('express-graphql');
+const indexRouter = require('./routes/index');
+const usersRouter = require('./routes/users');
+const schema = require('./schema/schema');
+const mongoose = require('mongoose');
+const app = express();
 
-var app = express();
-
+mongoose.connect(
+  'mongodb://administrator:secret91@ds261660.mlab.com:61660/jobslinkdb',
+);
+mongoose.connection.once('open', () => {
+  console.log('connected to the database');
+});
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
