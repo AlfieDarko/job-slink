@@ -1,5 +1,7 @@
 const graphql = require('graphql');
 const _ = require('lodash');
+const Job = require('../models/job');
+const Contractor = require('../models/contractor');
 
 const {
   GraphQLObjectType,
@@ -10,8 +12,6 @@ const {
   GraphQLList,
 } = graphql;
 
-
-
 const JobType = new GraphQLObjectType({
   name: 'Job',
   fields: () => ({
@@ -21,7 +21,16 @@ const JobType = new GraphQLObjectType({
     jobCategory: {
       type: GraphQLString,
     },
+    nameOfOwner: {
+      type: GraphQLString,
+    },
     address: {
+      type: GraphQLString,
+    },
+    postcode: {
+      type: GraphQLString,
+    },
+    specialRequests: {
       type: GraphQLString,
     },
     pay: {
@@ -55,6 +64,9 @@ const ContractorType = new GraphQLObjectType({
     address: {
       type: GraphQLString,
     },
+    postcode: {
+      type: GraphQLString,
+    },
     jobTitle: {
       type: GraphQLString,
     },
@@ -84,9 +96,7 @@ const RootQuery = new GraphQLObjectType({
     job: {
       type: JobType,
       args: {
-        id: {
-          type: GraphQLID,
-        },
+        id: { type: GraphQLID },
       },
       resolve(parent, args) {
         // code to get data from db/ other source
@@ -99,9 +109,7 @@ const RootQuery = new GraphQLObjectType({
     contractor: {
       type: ContractorType,
       args: {
-        id: {
-          type: GraphQLID,
-        },
+        id: { type: GraphQLID },
       },
       resolve(parent, args) {
         // return _.find(contractors, {
@@ -124,6 +132,61 @@ const RootQuery = new GraphQLObjectType({
   },
 });
 
+const Mutation = new GraphQLObjectType({
+  name: 'Mutation',
+  fields: {
+    addContractor: {
+      type: ContractorType,
+      args: {
+        name: { type: GraphQLString },
+        address: { type: GraphQLString },
+        postcode: { type: GraphQLString },
+        jobTitle: { type: GraphQLString },
+        jobsAccepted: { type: GraphQLInt },
+        jobsDeclined: { type: GraphQLInt },
+        jobsNoResponse: { type: GraphQLInt },
+      },
+      resolve(parent, args) {
+        let contractor = new Contractor({
+          name: args.name,
+          address: args.address,
+          postcode: args.postcode,
+          jobTitle: args.jobTitle,
+          jobsAccepted: args.jobsAccepted,
+          jobsDeclined: args.jobsDeclined,
+          jobsNoResponse: args.jobsNoResponse,
+        });
+        return contractor.save();
+      },
+    },
+    addJob: {
+      type: JobType,
+      args: {
+        jobCategory: { type: GraphQLString },
+        nameOfOwner: { type: GraphQLString },
+        address: { type: GraphQLString },
+        postcode: { type: GraphQLString },
+        specialRequests: { type: GraphQLString },
+        pay: { type: GraphQLString },
+        authorId: { type: GraphQLID },
+      },
+      resolve(parent, args) {
+        let job = new Job({
+          jobCategory: args.jobCategory,
+          nameOfOwner: args.nameOfOwner,
+          address: args.address,
+          postcode: args.postcode,
+          specialRequests: args.specialRequests,
+          pay: args.pay,
+          authorId: args.authorId,
+        });
+        return job.save();
+      },
+    },
+  },
+});
+
 module.exports = new GraphQLSchema({
   query: RootQuery,
+  mutation: Mutation,
 });
