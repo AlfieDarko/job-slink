@@ -10,9 +10,9 @@ const schema = require('./schema/schema');
 const mongoose = require('mongoose');
 const app = express();
 
-mongoose.connect(
-  'mongodb://administrator:secret91@ds261660.mlab.com:61660/jobslinkdb',
-);
+require('dotenv').load();
+
+mongoose.connect(process.env.MONGO_DB_KEY);
 mongoose.connection.once('open', () => {
   console.log('connected to the database');
 });
