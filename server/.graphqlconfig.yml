@@ -1,0 +1,6 @@
+schemaPath: schema.js
+extensions:
+  endpoints:
+    local:
+      url: 'http://localhost:${env:PORT}/graphql'
+subscription: 'ws://localhost:${env:PORT}'

@@ -10,6 +10,7 @@ const {
   GraphQLID,
   GraphQLInt,
   GraphQLList,
+  GraphQLNonNull,
 } = graphql;
 
 const JobType = new GraphQLObjectType({
@@ -39,9 +40,7 @@ const JobType = new GraphQLObjectType({
     contractor: {
       type: ContractorType,
       resolve(parent, args) {
-        // return _.find(contractors, {
-        //   id: parent.contractor.id,
-        // });
+        return Contractor.findById(parent.contractorId);
       },
     },
   }),
@@ -82,9 +81,7 @@ const ContractorType = new GraphQLObjectType({
     jobs: {
       type: new GraphQLList(JobType),
       resolve(parent, args) {
-        // return _.filter(jobs, {
-        //   contractorId: parent.id,
-        // });
+        return Job.find({ contractorId: parent.id });
       },
     },
   }),
@@ -99,11 +96,7 @@ const RootQuery = new GraphQLObjectType({
         id: { type: GraphQLID },
       },
       resolve(parent, args) {
-        // code to get data from db/ other source
-        // resolve function to find info
-        // return _.find(jobs, {
-        //   id: args.id,
-        // });
+        return Job.findById(args.id);
       },
     },
     contractor: {
@@ -112,21 +105,19 @@ const RootQuery = new GraphQLObjectType({
         id: { type: GraphQLID },
       },
       resolve(parent, args) {
-        // return _.find(contractors, {
-        //   id: args.id,
-        // });
+        return Contractor.findById(args.id);
       },
     },
     jobs: {
       type: new GraphQLList(JobType),
       resolve(parent, args) {
-        // return jobs;
+        return Job.find({});
       },
     },
     contractors: {
       type: new GraphQLList(ContractorType),
       resolve(parent, args) {
-        // return contractors;
+        return Contractor.find({});
       },
     },
   },
@@ -138,10 +129,18 @@ const Mutation = new GraphQLObjectType({
     addContractor: {
       type: ContractorType,
       args: {
-        name: { type: GraphQLString },
-        address: { type: GraphQLString },
-        postcode: { type: GraphQLString },
-        jobTitle: { type: GraphQLString },
+        name: {
+          type: new GraphQLNonNull(GraphQLString),
+        },
+        address: {
+          type: new GraphQLNonNull(GraphQLString),
+        },
+        postcode: {
+          type: new GraphQLNonNull(GraphQLString),
+        },
+        jobTitle: {
+          type: new GraphQLNonNull(GraphQLString),
+        },
         jobsAccepted: { type: GraphQLInt },
         jobsDeclined: { type: GraphQLInt },
         jobsNoResponse: { type: GraphQLInt },
@@ -162,12 +161,22 @@ const Mutation = new GraphQLObjectType({
     addJob: {
       type: JobType,
       args: {
-        jobCategory: { type: GraphQLString },
-        nameOfOwner: { type: GraphQLString },
-        address: { type: GraphQLString },
-        postcode: { type: GraphQLString },
+        jobCategory: {
+          type: new GraphQLNonNull(GraphQLString),
+        },
+        nameOfOwner: {
+          type: new GraphQLNonNull(GraphQLString),
+        },
+        address: {
+          type: new GraphQLNonNull(GraphQLString),
+        },
+        postcode: {
+          type: new GraphQLNonNull(GraphQLString),
+        },
         specialRequests: { type: GraphQLString },
-        pay: { type: GraphQLString },
+        pay: {
+          type: new GraphQLNonNull(GraphQLString),
+        },
         authorId: { type: GraphQLID },
       },
       resolve(parent, args) {

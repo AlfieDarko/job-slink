@@ -3,41 +3,59 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-const graphqlHTTP = require('express-graphql');
+const bodyParser = require('body-parser');
+
+const { graphqlExpress } = require('apollo-server-express');
+const expressPlayground = require('graphql-playground-middleware-express')
+  .default;
+
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
+
 const schema = require('./schema/schema');
 const mongoose = require('mongoose');
-const app = express();
 
 require('dotenv').load();
+
+const app = express();
 
 mongoose.connect(process.env.MONGO_DB_KEY);
 mongoose.connection.once('open', () => {
   console.log('connected to the database');
 });
-// view engine setup
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use(bodyParser.text({ type: 'application/graphql' }));
+
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 app.use(
   '/graphql',
-  graphqlHTTP({
-    schema,
-    graphiql: true,
+  graphqlExpress({
+    schema: schema,
+    // graphiql: false,
   }),
+);
+app.get(
+  '/playground',
+  express.json(),
+  expressPlayground({ endpoint: '/graphql' }),
+  () => {},
 );
 
 app.use(logger('dev'));
+
 app.use(express.json());
 app.use(
   express.urlencoded({
     extended: false,
   }),
 );
+
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
