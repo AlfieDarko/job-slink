@@ -7,7 +7,7 @@
     "client": "cd client && yarn start",
     "server": "cd server && yarn start",
     "dev": "concurrently \"yarn server\" \"yarn client\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
     "eslint-config-prettier": "2.9.0",
     "eslint-plugin-prettier": "2.6.0",
     "eslint-plugin-react": "7.9.1",
+    "jest": "^23.2.0",
     "prettier": "1.13.5"
   }
 }
