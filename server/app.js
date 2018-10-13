@@ -14,7 +14,6 @@ const usersRouter = require('./routes/users');
 
 const schema = require('./schema/schema');
 const mongoose = require('mongoose');
-
 require('dotenv').load();
 
 const app = express();
