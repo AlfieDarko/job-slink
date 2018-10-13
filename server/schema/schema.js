@@ -63,6 +63,12 @@ const ContractorType = new GraphQLObjectType({
     address: {
       type: GraphQLString,
     },
+    mobile: {
+      type: GraphQLInt
+    },
+    email: {
+      type: GraphQLString
+    },
     postcode: {
       type: GraphQLString,
     },
@@ -138,6 +144,12 @@ const Mutation = new GraphQLObjectType({
         postcode: {
           type: new GraphQLNonNull(GraphQLString),
         },
+        mobile: {
+          type: new GraphQLNonNull(GraphQLInt)
+        },
+        email: {
+          type: new GraphQLString
+        },
         jobTitle: {
           type: new GraphQLNonNull(GraphQLString),
         },
@@ -150,6 +162,8 @@ const Mutation = new GraphQLObjectType({
           name: args.name,
           address: args.address,
           postcode: args.postcode,
+          mobile: args.mobile,
+          email: args.email,
           jobTitle: args.jobTitle,
           jobsAccepted: args.jobsAccepted,
           jobsDeclined: args.jobsDeclined,
