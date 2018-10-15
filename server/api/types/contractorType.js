@@ -7,7 +7,7 @@ const {
   GraphQLList,
 } = graphql;
 const Job = require('../models/job');
-const JobType = require('./jobType');
+// const JobType = require('./jobType');
 
 module.exports = new GraphQLObjectType({
   name: 'Contractor',
@@ -50,3 +50,5 @@ module.exports = new GraphQLObjectType({
     },
   }),
 });
+
+const JobType = require('./jobType');
