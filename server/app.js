@@ -12,9 +12,8 @@ const expressPlayground = require('graphql-playground-middleware-express')
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 
-const schema = require('./schema/schema');
+const schema = require('./api/schema/schema');
 const mongoose = require('mongoose');
-
 require('dotenv').load();
 
 const app = express();
@@ -35,9 +34,10 @@ app.use(
   '/graphql',
   graphqlExpress({
     schema: schema,
-    // graphiql: false,
+    graphiql: false,
   }),
 );
+
 app.get(
   '/playground',
   express.json(),
