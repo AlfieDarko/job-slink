@@ -3,7 +3,7 @@ const { GraphQLObjectType, GraphQLString, GraphQLID } = graphql;
 const Contractor = require('../models/contractor');
 const ContractorType = require('./contractorType');
 
-module.exports.JobTypie = new GraphQLObjectType({
+module.exports = new GraphQLObjectType({
   name: 'Job',
   fields: () => ({
     id: {

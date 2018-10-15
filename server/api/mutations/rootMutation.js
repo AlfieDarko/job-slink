@@ -1,5 +1,5 @@
 const addContractorMutation = require('./addContractorMutation');
-import { addJobMutation } from './addJobMutation';
+const addJobMutation = require('./addJobMutation');
 const graphql = require('graphql');
 const { GraphQLObjectType } = graphql;
 

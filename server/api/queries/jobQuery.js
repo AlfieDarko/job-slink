@@ -3,7 +3,7 @@ const { GraphQLID } = graphql;
 const JobType = require('../types/jobType');
 const Job = require('../models/job');
 
-module.exports.jobQuery = {
+module.exports = {
   type: JobType,
   args: {
     id: { type: GraphQLID },

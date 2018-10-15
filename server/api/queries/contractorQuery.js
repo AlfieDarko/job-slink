@@ -3,7 +3,7 @@ const { GraphQLID } = graphql;
 const ContractorType = require('../types/contractorType');
 const Contractor = require('../models/contractor');
 
-module.exports.contractorQuery = {
+module.exports = {
   type: ContractorType,
   args: {
     id: { type: GraphQLID },

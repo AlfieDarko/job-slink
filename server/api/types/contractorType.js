@@ -9,7 +9,7 @@ const {
 const Job = require('../models/job');
 const JobType = require('./jobType');
 
-module.exports.ContractorType = new GraphQLObjectType({
+module.exports = new GraphQLObjectType({
   name: 'Contractor',
   fields: () => ({
     id: {

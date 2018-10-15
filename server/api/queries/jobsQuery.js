@@ -11,7 +11,7 @@ const {
 const JobType = require('../types/jobType');
 const Job = require('../models/job');
 
-module.exports.jobsQuery = {
+module.exports = {
   type: new GraphQLList(JobType),
   resolve(/*parent, args*/) {
     return Job.find({});
